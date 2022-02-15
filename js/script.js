@@ -7,7 +7,7 @@ project 1 - Random Quote Generator
  * `quotes` array
  ************************/
 const quotes = [{qid : 1, qTag:"Life", detail: "The greatest glory in living lies not in never falling, but in rising every time we fall.", authName:"Mother Teresa", citation:"Book of humanity"}, 
-{qid : 2, qTag:"Life", detail: "The greatest glory in living lies not in never falling, but in rising every time we fall.", authName:"Mother Teresa", citation:"Book of humanity"}, 
+{qid : 2, qTag:"Life", detail: "Life is what happens when you’re busy making other plans.", authName:"Jhon Lenon", citation:"Book of humanity"}, 
 {qid : 3, qTag:"Science", detail: "When you reach the end of your rope, tie a knot in it and hang on. ", authName:"Franklin D. Roosevelt", citation:"House of Cards"}, 
 {qid : 4, qTag:"Sports", detail: "Always remember that you are absolutely unique. Just like everyone else.", authName:"Margaret Mead", citation:"Lord of the rings"}, 
 {qid : 5, qTag:"Sports", detail: "Don't judge each day by the harvest you reap but by the seeds that you plant.", authName:"Eleanor Roosevelt", citation:"The Last Days"}, 
@@ -15,12 +15,12 @@ const quotes = [{qid : 1, qTag:"Life", detail: "The greatest glory in living lie
 {qid : 7, qTag:"Life", detail: "The best and most beautiful things in the world cannot be seen or even touched — they must be felt with the heart.", authName:"Helen Keller", citation:"YouTube"}, 
 {qid : 8, qTag:"Science", detail: "Whoever is happy will make others happy too.", authName:" Anna Frank", citation:"Diary of Anna"}, 
 {qid : 9, qTag:"Life", detail: "Do not go where the path may lead, go instead where there is no path and leave a trail.", authName:"Ralph Waldo Emerson", citation:"LinkedIn"}, 
-{qid : 10, qTag:"Sports", detail: "Spread love everywhere you go. Let no one ever come to you without leaving happier.", authName:"Mother Teresa", citation:"Book of Life"}, 
-{qid : 11, qTag:"Science", detail: "It is during our darkest moments that we must focus to see the light.", authName:"Aristotle", citation:"Philosohical Aspects"}, 
-{qid : 12, qTag:"Life", detail: "When you reach the end of your rope, tie a knot in it and hang on", authName:"Franklin ", citation:"New Horizon"}, 
-{qid : 13, qTag:"Sports", detail: "Tell me and I forget. Teach me and I remember. Involve me and I learn.", authName:"Benjamin", citation:"The NY Times"},
-{qid : 14, qTag:"Science", detail: "It is during our darkest moments that we must focus to see the light.", authName:"Aristotole", citation:"Life in Dream"},
-{qid : 15, qTag:"Science", detail: "Do not go where the path may lead, go instead where there is no path and leave a trail.", authName:"Ralph Waldo Emerson", citation:"Washington Post"} ];
+{qid : 10, qTag:"Sports", detail: "Spread love everywhere you go. Let no one ever come to you without leaving happier.", authName:"MItt Romni", citation:"Book of Life"}, 
+{qid : 11, qTag:"Science", detail: "It is during our darkest moments that we must focus to see the light.", authName:"Jarham", citation:"Philosohical Aspects"}, 
+{qid : 12, qTag:"Life", detail: "The big lesson in life, baby, is never be scared of anyone or anything.", authName:"Bladimir Zelenski ", citation:"New Horizon"}, 
+{qid : 13, qTag:"Sports", detail: "Many of life’s failures are people who did not realize how close they were to success when they gave up.", authName:"Arturito", citation:"The NY Times"},
+{qid : 14, qTag:"Science", detail: "Your time is limited, so don’t waste it living someone else’s life. Don’t be trapped by dogma – which is living with the results of other people’s thinking.", authName:"Ragnaar Lothbroke", citation:"Life in Dream"},
+{qid : 15, qTag:"Science", detail: "If life were predictable it would cease to be life, and be without flavor.", authName:"MIcke Tyson", citation:"Washington Post"} ];
 
 /**********************************
 ***   creating arrays by tag
@@ -90,7 +90,7 @@ function getRandomQuote(){
 let count = 0;
 let interval = setInterval(()=>{
     count += 1
-    if(count === 50){
+    if(count === 500){
         clearInterval(interval);
     }
     getRandomQuote();
